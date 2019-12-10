@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		8411470A23A030C70008E426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411470923A030C70008E426 /* AppDelegate.swift */; };
-		8411470C23A030C80008E426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411470B23A030C80008E426 /* ViewController.swift */; };
 		8411470F23A030C80008E426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8411470D23A030C80008E426 /* Main.storyboard */; };
 		8411471123A030CA0008E426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8411471023A030CA0008E426 /* Assets.xcassets */; };
 		8411471423A030CA0008E426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8411471223A030CA0008E426 /* LaunchScreen.storyboard */; };
+		8411471E23A031390008E426 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411471C23A031390008E426 /* SWRevealViewController.m */; };
+		8411472023A03BE80008E426 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411471F23A03BE80008E426 /* HomeController.swift */; };
+		8411472223A03BF90008E426 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411472123A03BF90008E426 /* MenuController.swift */; };
+		8411472423A03C500008E426 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411472323A03C500008E426 /* MenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8411470623A030C70008E426 /* TransportesGranados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportesGranados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8411470923A030C70008E426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8411470B23A030C80008E426 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8411470E23A030C80008E426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8411471023A030CA0008E426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8411471323A030CA0008E426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8411471523A030CA0008E426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8411471B23A031380008E426 /* TransportesGranados-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TransportesGranados-Bridging-Header.h"; sourceTree = "<group>"; };
+		8411471C23A031390008E426 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8411471D23A031390008E426 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		8411471F23A03BE80008E426 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		8411472123A03BF90008E426 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		8411472323A03C500008E426 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +62,17 @@
 		8411470823A030C70008E426 /* TransportesGranados */ = {
 			isa = PBXGroup;
 			children = (
+				8411471D23A031390008E426 /* SWRevealViewController.h */,
+				8411471C23A031390008E426 /* SWRevealViewController.m */,
 				8411470923A030C70008E426 /* AppDelegate.swift */,
-				8411470B23A030C80008E426 /* ViewController.swift */,
 				8411470D23A030C80008E426 /* Main.storyboard */,
 				8411471023A030CA0008E426 /* Assets.xcassets */,
 				8411471223A030CA0008E426 /* LaunchScreen.storyboard */,
 				8411471523A030CA0008E426 /* Info.plist */,
+				8411471B23A031380008E426 /* TransportesGranados-Bridging-Header.h */,
+				8411471F23A03BE80008E426 /* HomeController.swift */,
+				8411472123A03BF90008E426 /* MenuController.swift */,
+				8411472323A03C500008E426 /* MenuCell.swift */,
 			);
 			path = TransportesGranados;
 			sourceTree = "<group>";
@@ -96,6 +109,7 @@
 				TargetAttributes = {
 					8411470523A030C70008E426 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -135,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8411470C23A030C80008E426 /* ViewController.swift in Sources */,
+				8411472223A03BF90008E426 /* MenuController.swift in Sources */,
+				8411472023A03BE80008E426 /* HomeController.swift in Sources */,
+				8411472423A03C500008E426 /* MenuCell.swift in Sources */,
 				8411470A23A030C70008E426 /* AppDelegate.swift in Sources */,
+				8411471E23A031390008E426 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X3F9P5749;
 				INFOPLIST_FILE = TransportesGranados/Info.plist;
@@ -291,6 +309,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.galosoft.TransportesGranados;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TransportesGranados/TransportesGranados-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X3F9P5749;
 				INFOPLIST_FILE = TransportesGranados/Info.plist;
@@ -309,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.galosoft.TransportesGranados;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TransportesGranados/TransportesGranados-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
