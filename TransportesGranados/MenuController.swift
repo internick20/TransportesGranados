@@ -12,7 +12,7 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var tableViewMenu: UITableView!
     
-    var menuOptions = ["Chat","Contacto","Nosotros","Unidades"]
+    var menuOptions = ["Home", "Chat","Contacto","Nosotros","Unidades"]
     
     
     override func viewDidLoad() {
@@ -39,6 +39,6 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        self.performSegue(withIdentifier: menuOptions[indexPath.row], sender: self)
     }
 }

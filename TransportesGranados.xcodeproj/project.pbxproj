@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8404232A23A858D40059E85B /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404232923A858D40059E85B /* ChatScreen.swift */; };
+		8404232C23A85F9D0059E85B /* ContactoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404232B23A85F9D0059E85B /* ContactoScreen.swift */; };
+		8404232E23A8604D0059E85B /* NosotrosScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404232D23A8604D0059E85B /* NosotrosScreen.swift */; };
+		8404233023A860D70059E85B /* UnidadesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404232F23A860D70059E85B /* UnidadesScreen.swift */; };
 		8411470A23A030C70008E426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411470923A030C70008E426 /* AppDelegate.swift */; };
 		8411470F23A030C80008E426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8411470D23A030C80008E426 /* Main.storyboard */; };
 		8411471123A030CA0008E426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8411471023A030CA0008E426 /* Assets.xcassets */; };
@@ -15,9 +19,14 @@
 		8411472023A03BE80008E426 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411471F23A03BE80008E426 /* HomeController.swift */; };
 		8411472223A03BF90008E426 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411472123A03BF90008E426 /* MenuController.swift */; };
 		8411472423A03C500008E426 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411472323A03C500008E426 /* MenuCell.swift */; };
+		84624AB323A9A135000A2B19 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84624AB223A9A135000A2B19 /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8404232923A858D40059E85B /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		8404232B23A85F9D0059E85B /* ContactoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoScreen.swift; sourceTree = "<group>"; };
+		8404232D23A8604D0059E85B /* NosotrosScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NosotrosScreen.swift; sourceTree = "<group>"; };
+		8404232F23A860D70059E85B /* UnidadesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidadesScreen.swift; sourceTree = "<group>"; };
 		8411470623A030C70008E426 /* TransportesGranados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportesGranados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8411470923A030C70008E426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8411470E23A030C80008E426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +39,7 @@
 		8411471F23A03BE80008E426 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		8411472123A03BF90008E426 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		8411472323A03C500008E426 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		84624AB223A9A135000A2B19 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 		8411470823A030C70008E426 /* TransportesGranados */ = {
 			isa = PBXGroup;
 			children = (
+				84624AB123A9A10B000A2B19 /* View */,
 				8411471D23A031390008E426 /* SWRevealViewController.h */,
 				8411471C23A031390008E426 /* SWRevealViewController.m */,
 				8411470923A030C70008E426 /* AppDelegate.swift */,
@@ -73,8 +84,20 @@
 				8411471F23A03BE80008E426 /* HomeController.swift */,
 				8411472123A03BF90008E426 /* MenuController.swift */,
 				8411472323A03C500008E426 /* MenuCell.swift */,
+				8404232923A858D40059E85B /* ChatScreen.swift */,
+				8404232B23A85F9D0059E85B /* ContactoScreen.swift */,
+				8404232D23A8604D0059E85B /* NosotrosScreen.swift */,
+				8404232F23A860D70059E85B /* UnidadesScreen.swift */,
 			);
 			path = TransportesGranados;
+			sourceTree = "<group>";
+		};
+		84624AB123A9A10B000A2B19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84624AB223A9A135000A2B19 /* RoundButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8411472223A03BF90008E426 /* MenuController.swift in Sources */,
+				8404232A23A858D40059E85B /* ChatScreen.swift in Sources */,
+				8404232C23A85F9D0059E85B /* ContactoScreen.swift in Sources */,
 				8411472023A03BE80008E426 /* HomeController.swift in Sources */,
 				8411472423A03C500008E426 /* MenuCell.swift in Sources */,
+				8404233023A860D70059E85B /* UnidadesScreen.swift in Sources */,
+				84624AB323A9A135000A2B19 /* RoundButton.swift in Sources */,
 				8411470A23A030C70008E426 /* AppDelegate.swift in Sources */,
+				8404232E23A8604D0059E85B /* NosotrosScreen.swift in Sources */,
 				8411471E23A031390008E426 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
